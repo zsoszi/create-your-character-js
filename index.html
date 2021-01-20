@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="data.js"></script>
-</head>
-<body>
-    <main>
-        <form>
-            <h1>Character form</h1>
-            <div class="prop">
-                <label for="cName">Name:</label>
-                <input type="text" id="cN" name="cName" title="Character name">            
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Character</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="data.js"></script>
+	</head>
+	<body>
+		<main>
+			<form class="formCont">
+				<h1>Character form</h1>
+				<div class="prop">
+					<label for="cName">Name:</label>
+					<input type="text" id="cN" name="cName" title="Character name" />
+				</div>
+				<div class="prop">
+					<label for="cGender">Gender:</label>
+					<select id="cG">
+						<option value=""></option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<div class="prop">
+					<label for="cRacer">Racer:</label>
+					<select id="cR">
+						<option value=""></option>
+						<option value="dragon">Dragon</option>
+						<option value=""></option>
+						<option value="human">Human</option>
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="prop">
+					<label for="cClass">Class:</label>
+					<select id="cC">
+						<option value=""></option>
+						<option value="hero">Hero</option>
+						<option value="slave">Slave</option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="prop">
+					<button id="submit" type="submit">Submit</button>
+				</div>
+			</form>
+            <div class="wall"></div>
             <div>
-                <label for="cGender" id="cG"></label>
-                <section>
-                    <option value=""></option>
-                </section>
+                <h1>Your character</h1>
             </div>
-          </form>
-        <div>
-        </div>
-    </main>
-</body>
+		</main>
+	</body>
 </html>
