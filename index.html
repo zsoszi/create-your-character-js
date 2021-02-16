@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./image/favicon.jpg" >
 		<title>Character</title>
 		<link rel="stylesheet" href="style.css" />
 		<script src="data.js"></script>
@@ -12,45 +13,49 @@
 			<form class="formCont">
 				<h1>Character form</h1>
 				<div class="prop">
-					<label for="cName">Name:</label>
-					<input type="text" id="cN" name="cName" title="Character name" />
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" title="Character name" required />
 				</div>
 				<div class="prop">
-					<label for="cGender">Gender:</label>
-					<select id="cG">
-						<option value=""></option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
+					<label for="gender">Gender:</label>
+					<select id="gender" name="gender" required>
+						<option value="prince">Prince</option>
+						<option value="princess">Princess</option>
 					</select>
 				</div>
 				<div class="prop">
-					<label for="cRacer">Racer:</label>
-					<select id="cR">
-						<option value=""></option>
-						<option value="dragon">Dragon</option>
-						<option value=""></option>
+					<label for="race">Magic Type:</label>
+					<select id="race" name="race">
 						<option value="human">Human</option>
-						<option value=""></option>
+						<option value="animal">Animal</option>
+						<option value="fairy">Fairy</option>
 					</select>
 				</div>
 				<div class="prop">
-					<label for="cClass">Class:</label>
-					<select id="cC">
-						<option value=""></option>
+					<label for="class">Class:</label>
+					<select id="rank" name="class">
 						<option value="hero">Hero</option>
-						<option value="slave">Slave</option>
-						<option value=""></option>
-						<option value=""></option>
+						<option value="helper">Helper</option>
+						<option value="evil">Evil</option>
 					</select>
 				</div>
 				<div class="prop">
-					<button id="submit" type="submit">Submit</button>
+					<button id="submit">Create Character</button>
 				</div>
 			</form>
-            <div class="wall"></div>
             <div>
-                <h1>Your character</h1>
+				<div class="name"></div>
+				<div class="gender">
+					<img src="./image/prince.png" id="gImg">
+				</div>
+				<div class="race">
+					<img src="./image/human.png" id='rImg'>
+				</div>
+				<div class="class">
+					<img src="./image/hero.png" id="cImg">
+				</div>
             </div>
+
 		</main>
 	</body>
 </html>

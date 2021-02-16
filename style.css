@@ -12,5 +12,47 @@
 
 body {
   font-family: 'waltograph';
+  color: white;
+  font-size: larger;
+  background: url("./image/bg.jpg") fixed no-repeat center;
+  background-size: cover;
+}
+
+main {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50px;
+  left: 150px;
+  right: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#submit {
+  color: white;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  font-family: 'waltograph';
+  cursor: pointer;
+}
+
+.prop,
+.name {
+  font-size: 50px;
+}
+
+#gImg {
+  width: 50%;
+}
+
+#rImg,
+#cImg {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */

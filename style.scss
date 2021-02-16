@@ -10,4 +10,42 @@
 
 body{
     font-family: 'waltograph';
+    color: white;
+    font-size: larger;
+    background: url('./image/bg.jpg') fixed no-repeat center;
+    background-size: cover;
+}
+
+main{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left:150px;
+    right: 150px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#submit{
+    color: white;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    font-family: 'waltograph';
+    cursor: pointer;
+}
+
+.prop,
+.name{
+    font-size: 50px;
+}
+
+#gImg{
+    width: 50%;
+}
+
+
+#rImg,
+#cImg{
+width: 30%;
 }
